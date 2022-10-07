@@ -18,11 +18,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "node": "16.17.0"
   },
   "scripts": {
-    "build": "cd codevault && npm run build",
-    "install-client": "cd codevault && npm install",
+    "build": "npm run build",
+    "install-client": "npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "server": "nodemon server.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
